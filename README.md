@@ -27,6 +27,31 @@ This project aims to address two central questions:
 * **`LLM-for-Causal-Discovery.ipynb`**: Main notebook where LLMs are queried using crafted prompts to discover causal relations among variables in classic Bayesian networks.
 * **`Validate-adj-matrix.ipynb`**: Evaluation module that compares the inferred causal adjacency matrix with the ground truth, using several structural metrics.
 
+```
+LLM-Causal-Discovery/
+├── data/                             # Benchmark datasets used for causal discovery
+│   ├── cancer.csv
+│   ├── asia.csv
+│   └── medical-diagnosis.csv
+├── LLM-for-Causal-Discovery.ipynb       # LLM-based causal graph construction
+├── Validate-adj-matrix.ipynb            # Graph evaluation metrics
+├── Verb-Sensitivity-Analysis.ipynb      # Prompt robustness analysis  
+├── src/                              # Source code for LLM prompting and graph utilities
+│   ├── llm_prompting.py                        # Functions to query LLM with causal questions
+│   ├── graph_utils.py                          # Adjacency matrix and visualization helpers
+│   ├── metrics.py                              # Evaluation metric calculations
+│   └── verb_variation.py                       # Verb generation and standardization
+├── results/                          # Output results and visualizations
+│   ├── inferred_graphs/
+│   ├── evaluation_scores/
+│   └── sensitivity_results/
+├── models/                           # (Optional) Saved LLM outputs or vectorized results
+│   └── cached_llm_responses.pkl
+├── README.md                         # Project overview and instructions
+├── requirements.txt                  # Python dependencies
+
+```
+
 ---
 
 ## 📊 Datasets Used
