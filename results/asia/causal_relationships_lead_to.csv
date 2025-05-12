@@ -1,0 +1,85 @@
+var1,var2,verb,answer,probability
+"('Visited Asia', 'yes/no')","('Smoker', 'yes/no')",lead to,FALSE,0.999999449
+"('Smoker', 'yes/no')","('Visited Asia', 'yes/no')",lead to,FALSE,0.99999933
+"('Visited Asia', 'yes/no')","('Smoker', 'yes/no')",NOT lead to,TRUE,0.991422193
+"('Visited Asia', 'yes/no')","('Tuberculosis', 'yes/no')",lead to,TRUE,0.999998734
+"('Tuberculosis', 'yes/no')","('Visited Asia', 'yes/no')",lead to,FALSE,0.99999933
+"('Visited Asia', 'yes/no')","('Tuberculosis', 'yes/no')",NOT lead to,TRUE,0.499999254
+"('Visited Asia', 'yes/no')","('Lung Cancer', 'yes/no')",lead to,FALSE,0.999999687
+"('Lung Cancer', 'yes/no')","('Visited Asia', 'yes/no')",lead to,FALSE,0.99999933
+"('Visited Asia', 'yes/no')","('Lung Cancer', 'yes/no')",NOT lead to,TRUE,0.499999135
+"('Visited Asia', 'yes/no')","('Bronchitis', 'yes/no')",lead to,FALSE,0.999664356
+"('Bronchitis', 'yes/no')","('Visited Asia', 'yes/no')",lead to,FALSE,0.99999933
+"('Visited Asia', 'yes/no')","('Bronchitis', 'yes/no')",NOT lead to,TRUE,0.924140545
+"('Visited Asia', 'yes/no')","('individual has either Tuberculosis or Lung Cancer', 'yes/no')",lead to,TRUE,0.996827092
+"('individual has either Tuberculosis or Lung Cancer', 'yes/no')","('Visited Asia', 'yes/no')",lead to,FALSE,0.99999933
+"('Visited Asia', 'yes/no')","('individual has either Tuberculosis or Lung Cancer', 'yes/no')",NOT lead to,TRUE,0.731056596
+"('Visited Asia', 'yes/no')","('X-ray Result', 'positive/negative')",lead to,FALSE,0.999999687
+"('X-ray Result', 'positive/negative')","('Visited Asia', 'yes/no')",lead to,FALSE,0.999999091
+"('Visited Asia', 'yes/no')","('X-ray Result', 'positive/negative')",NOT lead to,TRUE,0.499999641
+"('Visited Asia', 'yes/no')","('Dyspnea', 'yes/no')",lead to,FALSE,0.999998018
+"('Dyspnea', 'yes/no')","('Visited Asia', 'yes/no')",lead to,FALSE,0.99999933
+"('Visited Asia', 'yes/no')","('Dyspnea', 'yes/no')",NOT lead to,TRUE,0.97068703
+"('Smoker', 'yes/no')","('Tuberculosis', 'yes/no')",lead to,TRUE,0.999999449
+"('Tuberculosis', 'yes/no')","('Smoker', 'yes/no')",lead to,FALSE,0.99999921
+"('Smoker', 'yes/no')","('Tuberculosis', 'yes/no')",NOT lead to,FALSE,0.880795511
+"('Smoker', 'yes/no')","('Lung Cancer', 'yes/no')",lead to,TRUE,0.999999568
+"('Lung Cancer', 'yes/no')","('Smoker', 'yes/no')",lead to,FALSE,0.999999091
+"('Smoker', 'yes/no')","('Lung Cancer', 'yes/no')",NOT lead to,FALSE,0.99999921
+"('Smoker', 'yes/no')","('Bronchitis', 'yes/no')",lead to,TRUE,0.99999933
+"('Bronchitis', 'yes/no')","('Smoker', 'yes/no')",lead to,FALSE,0.999999091
+"('Smoker', 'yes/no')","('Bronchitis', 'yes/no')",NOT lead to,FALSE,0.999998376
+"('Smoker', 'yes/no')","('individual has either Tuberculosis or Lung Cancer', 'yes/no')",lead to,TRUE,0.999999687
+"('individual has either Tuberculosis or Lung Cancer', 'yes/no')","('Smoker', 'yes/no')",lead to,FALSE,0.99999933
+"('Smoker', 'yes/no')","('individual has either Tuberculosis or Lung Cancer', 'yes/no')",NOT lead to,FALSE,0.952572593
+"('Smoker', 'yes/no')","('X-ray Result', 'positive/negative')",lead to,TRUE,0.997527047
+"('X-ray Result', 'positive/negative')","('Smoker', 'yes/no')",lead to,FALSE,0.99999921
+"('Smoker', 'yes/no')","('X-ray Result', 'positive/negative')",NOT lead to,FALSE,0.939911886
+"('Smoker', 'yes/no')","('Dyspnea', 'yes/no')",lead to,TRUE,0.999999687
+"('Dyspnea', 'yes/no')","('Smoker', 'yes/no')",lead to,FALSE,0.999999091
+"('Smoker', 'yes/no')","('Dyspnea', 'yes/no')",NOT lead to,FALSE,0.994779319
+"('Tuberculosis', 'yes/no')","('Lung Cancer', 'yes/no')",lead to,TRUE,0.962672334
+"('Lung Cancer', 'yes/no')","('Tuberculosis', 'yes/no')",lead to,FALSE,0.999999449
+"('Tuberculosis', 'yes/no')","('Lung Cancer', 'yes/no')",NOT lead to,TRUE,0.622457846
+"('Tuberculosis', 'yes/no')","('Bronchitis', 'yes/no')",lead to,TRUE,0.999995992
+"('Bronchitis', 'yes/no')","('Tuberculosis', 'yes/no')",lead to,FALSE,0.999999449
+"('Tuberculosis', 'yes/no')","('Bronchitis', 'yes/no')",NOT lead to,TRUE,0.499998688
+"('Tuberculosis', 'yes/no')","('individual has either Tuberculosis or Lung Cancer', 'yes/no')",lead to,TRUE,0.999290085
+"('individual has either Tuberculosis or Lung Cancer', 'yes/no')","('Tuberculosis', 'yes/no')",lead to,FALSE,0.999995992
+"('Tuberculosis', 'yes/no')","('individual has either Tuberculosis or Lung Cancer', 'yes/no')",NOT lead to,FALSE,0.622457735
+"('Tuberculosis', 'yes/no')","('X-ray Result', 'positive/negative')",lead to,TRUE,0.99999933
+"('X-ray Result', 'positive/negative')","('Tuberculosis', 'yes/no')",lead to,FALSE,0.999999091
+"('Tuberculosis', 'yes/no')","('X-ray Result', 'positive/negative')",NOT lead to,FALSE,0.952572916
+"('Tuberculosis', 'yes/no')","('Dyspnea', 'yes/no')",lead to,TRUE,0.999999687
+"('Dyspnea', 'yes/no')","('Tuberculosis', 'yes/no')",lead to,FALSE,0.999999091
+"('Tuberculosis', 'yes/no')","('Dyspnea', 'yes/no')",NOT lead to,FALSE,0.880795695
+"('Lung Cancer', 'yes/no')","('Bronchitis', 'yes/no')",lead to,FALSE,0.999954272
+"('Bronchitis', 'yes/no')","('Lung Cancer', 'yes/no')",lead to,FALSE,0.995929548
+"('Lung Cancer', 'yes/no')","('Bronchitis', 'yes/no')",NOT lead to,TRUE,0.679177239
+"('Lung Cancer', 'yes/no')","('individual has either Tuberculosis or Lung Cancer', 'yes/no')",lead to,TRUE,0.904648976
+"('individual has either Tuberculosis or Lung Cancer', 'yes/no')","('Lung Cancer', 'yes/no')",lead to,FALSE,0.999964284
+"('Lung Cancer', 'yes/no')","('individual has either Tuberculosis or Lung Cancer', 'yes/no')",NOT lead to,TRUE,0.499998688
+"('Lung Cancer', 'yes/no')","('X-ray Result', 'positive/negative')",lead to,TRUE,0.999903614
+"('X-ray Result', 'positive/negative')","('Lung Cancer', 'yes/no')",lead to,FALSE,0.99999933
+"('Lung Cancer', 'yes/no')","('X-ray Result', 'positive/negative')",NOT lead to,FALSE,0.880794776
+"('Lung Cancer', 'yes/no')","('Dyspnea', 'yes/no')",lead to,TRUE,0.999999687
+"('Dyspnea', 'yes/no')","('Lung Cancer', 'yes/no')",lead to,FALSE,0.999999091
+"('Lung Cancer', 'yes/no')","('Dyspnea', 'yes/no')",NOT lead to,FALSE,0.991421606
+"('Bronchitis', 'yes/no')","('individual has either Tuberculosis or Lung Cancer', 'yes/no')",lead to,FALSE,0.999999687
+"('individual has either Tuberculosis or Lung Cancer', 'yes/no')","('Bronchitis', 'yes/no')",lead to,FALSE,0.999986694
+"('Bronchitis', 'yes/no')","('individual has either Tuberculosis or Lung Cancer', 'yes/no')",NOT lead to,TRUE,0.904649266
+"('Bronchitis', 'yes/no')","('X-ray Result', 'positive/negative')",lead to,TRUE,0.81757292
+"('X-ray Result', 'positive/negative')","('Bronchitis', 'yes/no')",lead to,FALSE,0.999999449
+"('Bronchitis', 'yes/no')","('X-ray Result', 'positive/negative')",NOT lead to,TRUE,0.56217466
+"('Bronchitis', 'yes/no')","('Dyspnea', 'yes/no')",lead to,TRUE,0.999999449
+"('Dyspnea', 'yes/no')","('Bronchitis', 'yes/no')",lead to,FALSE,0.99999933
+"('Bronchitis', 'yes/no')","('Dyspnea', 'yes/no')",NOT lead to,FALSE,0.998497935
+"('individual has either Tuberculosis or Lung Cancer', 'yes/no')","('X-ray Result', 'positive/negative')",lead to,TRUE,0.999998972
+"('X-ray Result', 'positive/negative')","('individual has either Tuberculosis or Lung Cancer', 'yes/no')",lead to,FALSE,0.999999568
+"('individual has either Tuberculosis or Lung Cancer', 'yes/no')","('X-ray Result', 'positive/negative')",NOT lead to,FALSE,0.952571515
+"('individual has either Tuberculosis or Lung Cancer', 'yes/no')","('Dyspnea', 'yes/no')",lead to,TRUE,0.999999687
+"('Dyspnea', 'yes/no')","('individual has either Tuberculosis or Lung Cancer', 'yes/no')",lead to,FALSE,0.99999933
+"('individual has either Tuberculosis or Lung Cancer', 'yes/no')","('Dyspnea', 'yes/no')",NOT lead to,FALSE,0.952571731
+"('X-ray Result', 'positive/negative')","('Dyspnea', 'yes/no')",lead to,FALSE,0.99973846
+"('Dyspnea', 'yes/no')","('X-ray Result', 'positive/negative')",lead to,FALSE,0.999999568
+"('X-ray Result', 'positive/negative')","('Dyspnea', 'yes/no')",NOT lead to,FALSE,0.622457271

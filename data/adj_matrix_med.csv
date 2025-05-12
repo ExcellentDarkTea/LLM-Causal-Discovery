@@ -1,0 +1,11 @@
+,Eat Fatty Food,Arteriosclerosis,Right Heart Syndrome,Left Heart Syndrome,Lungs Sound Funny,Difficulty Breathing,Smoking,Radon Exposure,Lung Cancer,Cough Up Blood
+Eat Fatty Food,0,1,0,0,0,0,0,0,0,0
+Arteriosclerosis,0,0,1,1,0,0,0,0,0,0
+Right Heart Syndrome,0,0,0,0,0,0,0,0,0,0
+Left Heart Syndrome,0,0,0,0,1,1,0,0,0,0
+Lungs Sound Funny,0,0,0,0,0,0,0,0,0,0
+Difficulty Breathing,0,0,0,0,0,0,0,0,0,0
+Smoking,0,0,0,0,0,0,0,0,1,0
+Radon Exposure,0,0,0,0,0,0,0,0,1,0
+Lung Cancer,0,0,0,0,0,1,0,0,0,1
+Cough Up Blood,0,0,0,0,0,0,0,0,0,0

@@ -1,0 +1,91 @@
+var1,var2,verb,answer,probability
+"('Eat Fatty Food', 'Consumes fatty foods) / Does not consume fatty foods')","('Arteriosclerosis', 'Present/Absent')",increase the chance of,TRUE,0.999999687
+"('Arteriosclerosis', 'Present/Absent')","('Eat Fatty Food', 'Consumes fatty foods) / Does not consume fatty foods')",increase the chance of,FALSE,0.999999568
+"('Eat Fatty Food', 'Consumes fatty foods) / Does not consume fatty foods')","('Right Heart Syndrome', 'Present/Absent')",increase the chance of,FALSE,0.777298917
+"('Right Heart Syndrome', 'Present/Absent')","('Eat Fatty Food', 'Consumes fatty foods) / Does not consume fatty foods')",increase the chance of,FALSE,0.99999933
+"('Eat Fatty Food', 'Consumes fatty foods) / Does not consume fatty foods')","('Left Heart Syndrome', 'Present/Absent')",increase the chance of,FALSE,0.904649562
+"('Left Heart Syndrome', 'Present/Absent')","('Eat Fatty Food', 'Consumes fatty foods) / Does not consume fatty foods')",increase the chance of,FALSE,0.99999921
+"('Eat Fatty Food', 'Consumes fatty foods) / Does not consume fatty foods')","('Lungs Sound Funny', 'Abnormal sounds/Normal sounds')",increase the chance of,FALSE,0.999999687
+"('Lungs Sound Funny', 'Abnormal sounds/Normal sounds')","('Eat Fatty Food', 'Consumes fatty foods) / Does not consume fatty foods')",increase the chance of,FALSE,0.99999921
+"('Eat Fatty Food', 'Consumes fatty foods) / Does not consume fatty foods')","('Difficulty Breathing', 'Experiences difficulty/No difficulty')",increase the chance of,FALSE,0.998498411
+"('Difficulty Breathing', 'Experiences difficulty/No difficulty')","('Eat Fatty Food', 'Consumes fatty foods) / Does not consume fatty foods')",increase the chance of,FALSE,0.99999933
+"('Eat Fatty Food', 'Consumes fatty foods) / Does not consume fatty foods')","('Smoking', 'Smoker/Non-smoker')",increase the chance of,FALSE,0.99999933
+"('Smoking', 'Smoker/Non-smoker')","('Eat Fatty Food', 'Consumes fatty foods) / Does not consume fatty foods')",increase the chance of,FALSE,0.999999687
+"('Eat Fatty Food', 'Consumes fatty foods) / Does not consume fatty foods')","('Radon Exposure', 'Exposed/Not exposed')",increase the chance of,FALSE,0.999999449
+"('Radon Exposure', 'Exposed/Not exposed')","('Eat Fatty Food', 'Consumes fatty foods) / Does not consume fatty foods')",increase the chance of,FALSE,0.99999933
+"('Eat Fatty Food', 'Consumes fatty foods) / Does not consume fatty foods')","('Lung Cancer', 'Present/Absent')",increase the chance of,FALSE,0.999999449
+"('Lung Cancer', 'Present/Absent')","('Eat Fatty Food', 'Consumes fatty foods) / Does not consume fatty foods')",increase the chance of,FALSE,0.99999933
+"('Eat Fatty Food', 'Consumes fatty foods) / Does not consume fatty foods')","('Cough Up Blood', 'Yes/No')",increase the chance of,FALSE,0.999999687
+"('Cough Up Blood', 'Yes/No')","('Eat Fatty Food', 'Consumes fatty foods) / Does not consume fatty foods')",increase the chance of,FALSE,0.99999933
+"('Arteriosclerosis', 'Present/Absent')","('Right Heart Syndrome', 'Present/Absent')",increase the chance of,TRUE,0.999954391
+"('Right Heart Syndrome', 'Present/Absent')","('Arteriosclerosis', 'Present/Absent')",increase the chance of,FALSE,0.999999687
+"('Arteriosclerosis', 'Present/Absent')","('Left Heart Syndrome', 'Present/Absent')",increase the chance of,TRUE,0.999986813
+"('Left Heart Syndrome', 'Present/Absent')","('Arteriosclerosis', 'Present/Absent')",increase the chance of,FALSE,0.999999568
+"('Arteriosclerosis', 'Present/Absent')","('Lungs Sound Funny', 'Abnormal sounds/Normal sounds')",increase the chance of,FALSE,0.996826739
+"('Lungs Sound Funny', 'Abnormal sounds/Normal sounds')","('Arteriosclerosis', 'Present/Absent')",increase the chance of,FALSE,0.999999449
+"('Arteriosclerosis', 'Present/Absent')","('Difficulty Breathing', 'Experiences difficulty/No difficulty')",increase the chance of,TRUE,0.999999449
+"('Difficulty Breathing', 'Experiences difficulty/No difficulty')","('Arteriosclerosis', 'Present/Absent')",increase the chance of,FALSE,0.999999449
+"('Arteriosclerosis', 'Present/Absent')","('Smoking', 'Smoker/Non-smoker')",increase the chance of,FALSE,0.99999921
+"('Smoking', 'Smoker/Non-smoker')","('Arteriosclerosis', 'Present/Absent')",increase the chance of,TRUE,0.999999568
+"('Arteriosclerosis', 'Present/Absent')","('Radon Exposure', 'Exposed/Not exposed')",increase the chance of,FALSE,0.999999568
+"('Radon Exposure', 'Exposed/Not exposed')","('Arteriosclerosis', 'Present/Absent')",increase the chance of,FALSE,0.999876207
+"('Arteriosclerosis', 'Present/Absent')","('Lung Cancer', 'Present/Absent')",increase the chance of,FALSE,0.999999687
+"('Lung Cancer', 'Present/Absent')","('Arteriosclerosis', 'Present/Absent')",increase the chance of,FALSE,0.999999568
+"('Arteriosclerosis', 'Present/Absent')","('Cough Up Blood', 'Yes/No')",increase the chance of,FALSE,0.995929311
+"('Cough Up Blood', 'Yes/No')","('Arteriosclerosis', 'Present/Absent')",increase the chance of,FALSE,0.99999933
+"('Right Heart Syndrome', 'Present/Absent')","('Left Heart Syndrome', 'Present/Absent')",increase the chance of,FALSE,0.999998614
+"('Left Heart Syndrome', 'Present/Absent')","('Right Heart Syndrome', 'Present/Absent')",increase the chance of,FALSE,0.731057685
+"('Right Heart Syndrome', 'Present/Absent')","('Lungs Sound Funny', 'Abnormal sounds/Normal sounds')",increase the chance of,TRUE,0.999997542
+"('Lungs Sound Funny', 'Abnormal sounds/Normal sounds')","('Right Heart Syndrome', 'Present/Absent')",increase the chance of,FALSE,0.962671782
+"('Right Heart Syndrome', 'Present/Absent')","('Difficulty Breathing', 'Experiences difficulty/No difficulty')",increase the chance of,TRUE,0.999999687
+"('Difficulty Breathing', 'Experiences difficulty/No difficulty')","('Right Heart Syndrome', 'Present/Absent')",increase the chance of,FALSE,0.999995038
+"('Right Heart Syndrome', 'Present/Absent')","('Smoking', 'Smoker/Non-smoker')",increase the chance of,FALSE,0.999998853
+"('Smoking', 'Smoker/Non-smoker')","('Right Heart Syndrome', 'Present/Absent')",increase the chance of,TRUE,0.999999568
+"('Right Heart Syndrome', 'Present/Absent')","('Radon Exposure', 'Exposed/Not exposed')",increase the chance of,FALSE,0.999999449
+"('Radon Exposure', 'Exposed/Not exposed')","('Right Heart Syndrome', 'Present/Absent')",increase the chance of,FALSE,0.999954272
+"('Right Heart Syndrome', 'Present/Absent')","('Lung Cancer', 'Present/Absent')",increase the chance of,FALSE,0.999999449
+"('Lung Cancer', 'Present/Absent')","('Right Heart Syndrome', 'Present/Absent')",increase the chance of,FALSE,0.849996111
+"('Right Heart Syndrome', 'Present/Absent')","('Cough Up Blood', 'Yes/No')",increase the chance of,TRUE,0.999986813
+"('Cough Up Blood', 'Yes/No')","('Right Heart Syndrome', 'Present/Absent')",increase the chance of,FALSE,0.999999568
+"('Left Heart Syndrome', 'Present/Absent')","('Lungs Sound Funny', 'Abnormal sounds/Normal sounds')",increase the chance of,TRUE,0.999964404
+"('Lungs Sound Funny', 'Abnormal sounds/Normal sounds')","('Left Heart Syndrome', 'Present/Absent')",increase the chance of,FALSE,0.999998018
+"('Left Heart Syndrome', 'Present/Absent')","('Difficulty Breathing', 'Experiences difficulty/No difficulty')",increase the chance of,TRUE,0.999999687
+"('Difficulty Breathing', 'Experiences difficulty/No difficulty')","('Left Heart Syndrome', 'Present/Absent')",increase the chance of,FALSE,0.999999687
+"('Left Heart Syndrome', 'Present/Absent')","('Smoking', 'Smoker/Non-smoker')",increase the chance of,FALSE,0.99999921
+"('Smoking', 'Smoker/Non-smoker')","('Left Heart Syndrome', 'Present/Absent')",increase the chance of,FALSE,0.999997422
+"('Left Heart Syndrome', 'Present/Absent')","('Radon Exposure', 'Exposed/Not exposed')",increase the chance of,FALSE,0.999999449
+"('Radon Exposure', 'Exposed/Not exposed')","('Left Heart Syndrome', 'Present/Absent')",increase the chance of,FALSE,0.999999687
+"('Left Heart Syndrome', 'Present/Absent')","('Lung Cancer', 'Present/Absent')",increase the chance of,FALSE,0.99999933
+"('Lung Cancer', 'Present/Absent')","('Left Heart Syndrome', 'Present/Absent')",increase the chance of,FALSE,0.99999921
+"('Left Heart Syndrome', 'Present/Absent')","('Cough Up Blood', 'Yes/No')",increase the chance of,TRUE,0.995929429
+"('Cough Up Blood', 'Yes/No')","('Left Heart Syndrome', 'Present/Absent')",increase the chance of,FALSE,0.999999568
+"('Lungs Sound Funny', 'Abnormal sounds/Normal sounds')","('Difficulty Breathing', 'Experiences difficulty/No difficulty')",increase the chance of,TRUE,0.999998972
+"('Difficulty Breathing', 'Experiences difficulty/No difficulty')","('Lungs Sound Funny', 'Abnormal sounds/Normal sounds')",increase the chance of,TRUE,0.999924949
+"('Lungs Sound Funny', 'Abnormal sounds/Normal sounds')","('Smoking', 'Smoker/Non-smoker')",increase the chance of,FALSE,0.99999933
+"('Smoking', 'Smoker/Non-smoker')","('Lungs Sound Funny', 'Abnormal sounds/Normal sounds')",increase the chance of,TRUE,0.999999687
+"('Lungs Sound Funny', 'Abnormal sounds/Normal sounds')","('Radon Exposure', 'Exposed/Not exposed')",increase the chance of,FALSE,0.999999449
+"('Radon Exposure', 'Exposed/Not exposed')","('Lungs Sound Funny', 'Abnormal sounds/Normal sounds')",increase the chance of,TRUE,0.999998734
+"('Lungs Sound Funny', 'Abnormal sounds/Normal sounds')","('Lung Cancer', 'Present/Absent')",increase the chance of,FALSE,0.999999687
+"('Lung Cancer', 'Present/Absent')","('Lungs Sound Funny', 'Abnormal sounds/Normal sounds')",increase the chance of,TRUE,0.999999687
+"('Lungs Sound Funny', 'Abnormal sounds/Normal sounds')","('Cough Up Blood', 'Yes/No')",increase the chance of,TRUE,0.982013313
+"('Cough Up Blood', 'Yes/No')","('Lungs Sound Funny', 'Abnormal sounds/Normal sounds')",increase the chance of,FALSE,0.982013313
+"('Difficulty Breathing', 'Experiences difficulty/No difficulty')","('Smoking', 'Smoker/Non-smoker')",increase the chance of,FALSE,0.999999449
+"('Smoking', 'Smoker/Non-smoker')","('Difficulty Breathing', 'Experiences difficulty/No difficulty')",increase the chance of,TRUE,0.999999568
+"('Difficulty Breathing', 'Experiences difficulty/No difficulty')","('Radon Exposure', 'Exposed/Not exposed')",increase the chance of,FALSE,0.99999933
+"('Radon Exposure', 'Exposed/Not exposed')","('Difficulty Breathing', 'Experiences difficulty/No difficulty')",increase the chance of,TRUE,0.999999687
+"('Difficulty Breathing', 'Experiences difficulty/No difficulty')","('Lung Cancer', 'Present/Absent')",increase the chance of,FALSE,0.999999568
+"('Lung Cancer', 'Present/Absent')","('Difficulty Breathing', 'Experiences difficulty/No difficulty')",increase the chance of,TRUE,0.999999568
+"('Difficulty Breathing', 'Experiences difficulty/No difficulty')","('Cough Up Blood', 'Yes/No')",increase the chance of,FALSE,0.989012401
+"('Cough Up Blood', 'Yes/No')","('Difficulty Breathing', 'Experiences difficulty/No difficulty')",increase the chance of,FALSE,0.999983118
+"('Smoking', 'Smoker/Non-smoker')","('Radon Exposure', 'Exposed/Not exposed')",increase the chance of,FALSE,0.999999449
+"('Radon Exposure', 'Exposed/Not exposed')","('Smoking', 'Smoker/Non-smoker')",increase the chance of,FALSE,0.99999933
+"('Smoking', 'Smoker/Non-smoker')","('Lung Cancer', 'Present/Absent')",increase the chance of,TRUE,0.999999449
+"('Lung Cancer', 'Present/Absent')","('Smoking', 'Smoker/Non-smoker')",increase the chance of,FALSE,0.999998972
+"('Smoking', 'Smoker/Non-smoker')","('Cough Up Blood', 'Yes/No')",increase the chance of,TRUE,0.999999568
+"('Cough Up Blood', 'Yes/No')","('Smoking', 'Smoker/Non-smoker')",increase the chance of,FALSE,0.99999933
+"('Radon Exposure', 'Exposed/Not exposed')","('Lung Cancer', 'Present/Absent')",increase the chance of,TRUE,0.999999568
+"('Lung Cancer', 'Present/Absent')","('Radon Exposure', 'Exposed/Not exposed')",increase the chance of,FALSE,0.999999449
+"('Radon Exposure', 'Exposed/Not exposed')","('Cough Up Blood', 'Yes/No')",increase the chance of,TRUE,0.999664356
+"('Cough Up Blood', 'Yes/No')","('Radon Exposure', 'Exposed/Not exposed')",increase the chance of,FALSE,0.99999921
+"('Lung Cancer', 'Present/Absent')","('Cough Up Blood', 'Yes/No')",increase the chance of,TRUE,0.999999568
+"('Cough Up Blood', 'Yes/No')","('Lung Cancer', 'Present/Absent')",increase the chance of,FALSE,0.999998734

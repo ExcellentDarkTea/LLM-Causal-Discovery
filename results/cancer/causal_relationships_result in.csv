@@ -1,0 +1,21 @@
+var1,var2,verb,answer,probability
+"('Exposure to pollutants', 'low/high')","('Smoker', 'yes/no')",result in,False,0.999999448776502
+"('Smoker', 'yes/no')","('Exposure to pollutants', 'low/high')",result in,False,0.9999995679801056
+"('Exposure to pollutants', 'low/high')","('individual has Cancer', 'yes/no')",result in,True,0.9999996871837232
+"('individual has Cancer', 'yes/no')","('Exposure to pollutants', 'low/high')",result in,False,0.9999993295729128
+"('Exposure to pollutants', 'low/high')","('Dyspnea', 'yes/no')",result in,True,0.9999996871837232
+"('Dyspnea', 'yes/no')","('Exposure to pollutants', 'low/high')",result in,False,0.999999091165777
+"('Exposure to pollutants', 'low/high')","('X-ray Result', 'positive/negative')",result in,False,0.989011932447037
+"('X-ray Result', 'positive/negative')","('Exposure to pollutants', 'low/high')",result in,False,0.9999993295729128
+"('Smoker', 'yes/no')","('individual has Cancer', 'yes/no')",result in,True,0.9999996871837232
+"('individual has Cancer', 'yes/no')","('Smoker', 'yes/no')",result in,False,0.9999993295729128
+"('Smoker', 'yes/no')","('Dyspnea', 'yes/no')",result in,True,0.9999998063873693
+"('Dyspnea', 'yes/no')","('Smoker', 'yes/no')",result in,False,0.9999993295729128
+"('Smoker', 'yes/no')","('X-ray Result', 'positive/negative')",result in,True,0.6791778058845909
+"('X-ray Result', 'positive/negative')","('Smoker', 'yes/no')",result in,False,0.999999091165777
+"('individual has Cancer', 'yes/no')","('Dyspnea', 'yes/no')",result in,True,0.9999984951481292
+"('Dyspnea', 'yes/no')","('individual has Cancer', 'yes/no')",result in,False,0.999999091165777
+"('individual has Cancer', 'yes/no')","('X-ray Result', 'positive/negative')",result in,True,0.9999644035311729
+"('X-ray Result', 'positive/negative')","('individual has Cancer', 'yes/no')",result in,False,0.9999995679801056
+"('Dyspnea', 'yes/no')","('X-ray Result', 'positive/negative')",result in,False,0.9999993295729128
+"('X-ray Result', 'positive/negative')","('Dyspnea', 'yes/no')",result in,False,0.9999996871837232

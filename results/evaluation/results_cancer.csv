@@ -1,0 +1,24 @@
+verb,type,SHD,SHD (normalized),TENE,TENE (normalized),TERE,TERE (normalized),F1 Score
+affect,llm,3,0.12,0,0.0,0,0.0,0.7273
+affect,cycle,3,0.12,0,0.0,0,0.0,0.7273
+affect,mediator,0,0.0,0,0.0,0,0.0,1.0
+cause,llm,3,0.12,0,0.0,0,0.0,0.7273
+cause,cycle,3,0.12,0,0.0,0,0.0,0.7273
+cause,mediator,0,0.0,0,0.0,0,0.0,1.0
+increase the chance of,llm,4,0.16,0,0.0,0,0.0,0.6667
+increase the chance of,cycle,4,0.16,0,0.0,0,0.0,0.6667
+increase the chance of,mediator,0,0.0,0,0.0,0,0.0,1.0
+influence,llm,3,0.12,0,0.0,0,0.0,0.7273
+influence,cycle,3,0.12,0,0.0,0,0.0,0.7273
+influence,mediator,0,0.0,0,0.0,0,0.0,1.0
+lead to,llm,3,0.12,0,0.0,0,0.0,0.7273
+lead to,cycle,3,0.12,0,0.0,0,0.0,0.7273
+lead to,mediator,0,0.0,0,0.0,0,0.0,1.0
+raise the risk of,llm,3,0.12,0,0.0,0,0.0,0.7273
+raise the risk of,cycle,3,0.12,0,0.0,0,0.0,0.7273
+raise the risk of,mediator,0,0.0,0,0.0,0,0.0,1.0
+result in,llm,3,0.12,0,0.0,0,0.0,0.7273
+result in,cycle,3,0.12,0,0.0,0,0.0,0.7273
+result in,mediator,0,0.0,0,0.0,0,0.0,1.0
+avg,llm,3,0.12,0,0.0,0,0.0,0.7273
+avg,mediator,0,0.0,0,0.0,0,0.0,1.0

@@ -1,0 +1,21 @@
+var1,var2,verb,answer,probability
+"('Exposure to pollutants', 'low/high')","('Smoker', 'yes/no')",affect,False,0.9999995679801056
+"('Smoker', 'yes/no')","('Exposure to pollutants', 'low/high')",affect,False,0.9999995679801056
+"('Exposure to pollutants', 'low/high')","('individual has Cancer', 'yes/no')",affect,True,0.9999995679801056
+"('individual has Cancer', 'yes/no')","('Exposure to pollutants', 'low/high')",affect,False,0.9999993295729128
+"('Exposure to pollutants', 'low/high')","('Dyspnea', 'yes/no')",affect,True,0.9999996871837232
+"('Dyspnea', 'yes/no')","('Exposure to pollutants', 'low/high')",affect,False,0.999999448776502
+"('Exposure to pollutants', 'low/high')","('X-ray Result', 'positive/negative')",affect,False,0.9525729163037382
+"('X-ray Result', 'positive/negative')","('Exposure to pollutants', 'low/high')",affect,False,0.999999091165777
+"('Smoker', 'yes/no')","('individual has Cancer', 'yes/no')",affect,True,0.9999995679801056
+"('individual has Cancer', 'yes/no')","('Smoker', 'yes/no')",affect,False,0.9999993295729128
+"('Smoker', 'yes/no')","('Dyspnea', 'yes/no')",affect,True,0.9999998063873693
+"('Dyspnea', 'yes/no')","('Smoker', 'yes/no')",affect,False,0.9999989719621736
+"('Smoker', 'yes/no')","('X-ray Result', 'positive/negative')",affect,True,0.9999783499621913
+"('X-ray Result', 'positive/negative')","('Smoker', 'yes/no')",affect,False,0.9999989719621736
+"('individual has Cancer', 'yes/no')","('Dyspnea', 'yes/no')",affect,True,0.999999448776502
+"('Dyspnea', 'yes/no')","('individual has Cancer', 'yes/no')",affect,False,0.9999992103693378
+"('individual has Cancer', 'yes/no')","('X-ray Result', 'positive/negative')",affect,True,0.999664355734915
+"('X-ray Result', 'positive/negative')","('individual has Cancer', 'yes/no')",affect,False,0.9999996871837232
+"('Dyspnea', 'yes/no')","('X-ray Result', 'positive/negative')",affect,False,0.9999992103693378
+"('X-ray Result', 'positive/negative')","('Dyspnea', 'yes/no')",affect,False,0.9990885944370145

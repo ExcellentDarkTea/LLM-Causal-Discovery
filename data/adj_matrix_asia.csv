@@ -1,0 +1,9 @@
+,Visited_Asia,Smoker,Tuberculosis,Lung_Cancer,Bronchitis,individual_has_either_Tuberculosis_or_Lung_Cancer,X-ray_Result,Dyspnea
+Visited_Asia,0,0,1,0,0,0,0,0
+Smoker,0,0,0,1,1,0,0,0
+Tuberculosis,0,0,0,0,0,1,0,0
+Lung_Cancer,0,0,0,0,0,1,0,0
+Bronchitis,0,0,0,0,0,0,0,1
+individual_has_either_Tuberculosis_or_Lung_Cancer,0,0,0,0,0,0,1,1
+X-ray_Result,0,0,0,0,0,0,0,0
+Dyspnea,0,0,0,0,0,0,0,0

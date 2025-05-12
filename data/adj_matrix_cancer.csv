@@ -1,0 +1,6 @@
+,Exposure_to_pollutants,Smoker,individual_has_Cancer,Dyspnea,X-ray_Result
+Exposure_to_pollutants,0,0,1,0,0
+Smoker,0,0,1,0,0
+individual_has_Cancer,0,0,0,1,1
+Dyspnea,0,0,0,0,0
+X-ray_Result,0,0,0,0,0
