@@ -1,31 +1,28 @@
-﻿# LLM-Causal-Discovery
 # 🔍 LLM-based Causal Discovery Toolkit
 
-This project explores the use of Large Language Models (LLMs) for causal discovery on well-established medical benchmark datasets. By leveraging prompt-based techniques, the notebook investigates whether LLMs can infer causal relationships between variables in classic Bayesian networks like Cancer, Asia and Medical Diagnostics.
+This project investigates the potential of Large Language Models (LLMs) for causal discovery using prompt-based querying. Specifically, it explores whether LLMs can accurately infer causal graphs (Bayesian networks) over benchmark datasets when asked about causal relationships in natural language.
+
+The script provided is in relation to the following paper: (arXive link for future)
 
 ---
-## 📌 Project Goals
-
-This work is part of an exploration into **LLMs as tools for expert elicitation**—particularly for building causal models in domains like healthcare, where manual modeling is time-consuming and costly.
-
-## 💡 Project Summary
+# 💡 Project Summary
 
 **Business/Research Context:**  
-Understanding causal relationships is critical in domains like healthcare for decision support systems. Traditional statistical methods often fall short in capturing nuanced, real-world causal links. This project combines recent advances in Large Language Models (LLMs), such as GPT, with causal graph modeling to perform discovery, validation, and sensitivity analysis of causal structures from data.
+Understanding causal relationships is critical in domains like healthcare for decision support systems. Traditional statistical methods often fall short in capturing nuanced, real-world causal links. This project combines recent advances in LLMs, such as GPT, with causal graph modeling to perform discovery, validation, and sensitivity analysis of causal structures from data.
 
-This project aims to address two central questions:
+## 📌 Research Goals
 
-1. How can LLMs contribute to causal discovery without becoming a bottleneck for reliability? That is, how can we evaluate and trust their outputs beyond simple accuracy metrics or downstream task performance?
-
-2. Which prompt designs and linguistic choices improve the LLM’s ability to detect or validate causal relationships? In particular, how does verb framing, question format, or entity context affect the model's confidence and consistency?
-
+* Evaluate whether LLMs can serve as **domain experts** for **expert elicitation** in causal discovery.
+* Analyze **linguistic biases** in LLM behavior during causal reasoning tasks.
+* Provide a reproducible framework for combining NLP and causal inference.
 ---
 
 
-## 📂 Project Structure
+# 📂 Project Structure
 
-* **`LLM-for-Causal-Discovery.ipynb`**: Main notebook where LLMs are queried using crafted prompts to discover causal relations among variables in classic Bayesian networks.
-* **`Validate-adj-matrix.ipynb`**: Evaluation module that compares the inferred causal adjacency matrix with the ground truth, using several structural metrics.
+* **`LLM-for-Causal-Discovery.ipynb`**: Core notebook where causal relationships are queried via LLM prompts and adjacency matrices are constructed.
+* **`Validate-adj-matrix.ipynb`**: Contains utility functions for comparing predicted and ground-truth adjacency matrices using standard evaluation metrics.
+* **`Verb-Sensitivity-Analysis.ipynb`**: Analyzes how different causal verbs influence LLM outputs, using statistical testing to assess sensitivity and robustness.
 
 ```
 LLM-Causal-Discovery/
@@ -37,16 +34,12 @@ LLM-Causal-Discovery/
 ├── Validate-adj-matrix.ipynb            # Graph evaluation metrics
 ├── Verb-Sensitivity-Analysis.ipynb      # Prompt robustness analysis  
 ├── src/                              # Source code for LLM prompting and graph utilities
-│   ├── llm_prompting.py                        # Functions to query LLM with causal questions
-│   ├── graph_utils.py                          # Adjacency matrix and visualization helpers
-│   ├── metrics.py                              # Evaluation metric calculations
-│   └── verb_variation.py                       # Verb generation and standardization
+│   ├── graph_utils.py                    # Adjacency matrix and visualization helpers
+│   └── metrics.py                        # Evaluation metric calculations
 ├── results/                          # Output results and visualizations
-│   ├── inferred_graphs/
-│   ├── evaluation_scores/
-│   └── sensitivity_results/
-├── models/                           # (Optional) Saved LLM outputs or vectorized results
-│   └── cached_llm_responses.pkl
+│   ├── asia/
+│   ├── cancer/
+│   └── medicine/
 ├── README.md                         # Project overview and instructions
 ├── requirements.txt                  # Python dependencies
 
@@ -60,7 +53,7 @@ LLM-Causal-Discovery/
 * **Asia**: A respiratory disease-related network including Asia travel, Tuberculosis, Smoking, Lung Cancer, Bronchitis, X-ray, and Dyspnoea.
 * **Medicine Diagnistic**: A cardiovascular disease-related network including: Eat Fatty Food, Arteriosclerosis,	Right Heart Syndrome,	Left Heart Syndrome,	Lungs Sound Funny,	Difficulty Breathing,	Smoking,	Radon Exposure,	Lung Cancer,	Cough Up Blood
 
-These datasets are standard in causal inference benchmarking and have clearly defined ground-truth structures.
+These [datasets](https://www.bnlearn.com/bnrepository/) are standard in causal inference benchmarking and have clearly defined ground-truth structures.
 
 ---
 
@@ -70,11 +63,11 @@ These datasets are standard in causal inference benchmarking and have clearly de
 
 * Uses **prompt engineering** to ask LLMs about possible causal links (e.g., "Does smoking cause cancer?").
 * Applies various **causal verb formulations** such as “lead to”, “influence”, “is caused by” to evaluate robustness.
-* Aggregates LLM responses into a **binary adjacency matrix**, representing the inferred causal structure.
+* Aggregates responses into an **adjacency matrix** representing the discovered causal graph.
 
 ### Graph Evaluation
 
-The predicted matrices are evaluated against the ground truth using:
+Compares predicted vs. true adjacency matrices using:
 
 * **Structural Hamming Distance (SHD)**: Counts mismatched edges.
 * **TENE** (True Edge to Negative Edge): Missed true edges.
@@ -84,26 +77,36 @@ The predicted matrices are evaluated against the ground truth using:
 
 These metrics are computed by the utility functions in `Validate-adj-matrix.ipynb`.
 
+### Verb Sensitivity Analysis
+
+* Evaluates the **impact of different causal verbs** on the output causal graphs.
+* Uses non-parametric statistical tests:
+  * **Friedman test** to assess global differences among verb groups.
+  * **Wilcoxon test** for pairwise comparisons.
+* Results highlight how sensitive LLMs are to phrasing, an important consideration for prompt design.
 
 
 ---
 
 ## 📦 Requirements
 
-Install the required libraries with:
+Install dependencies with:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Main dependencies:
+Key packages:
 
-* `openai` (or another LLM provider)
-* `pandas`, `numpy`
-* `scikit-learn`
-* `networkx`, `matplotlib`
+* `openai`, `pandas`, `numpy`, `scikit-learn`
+* `networkx`, `matplotlib`, `seaborn`
+* `scipy` (for statistical tests)
 
 ---
 
+## 📈 Future Work
+
+* Expand to large networks such as **Alarm** and **Child**.
+* Compare LLM-generated graphs with those from traditional algorithms (e.g., PC, GES, NOTEARS).
 
 
