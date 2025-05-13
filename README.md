@@ -67,7 +67,7 @@ These [datasets](https://www.bnlearn.com/bnrepository/) are standard in causal i
 
 ### Graph Evaluation
 
-Compares predicted vs. true adjacency matrices using:
+Compare predicted vs. true adjacency matrices using:
 
 * **Structural Hamming Distance (SHD)**: Counts mismatched edges.
 * **TENE** (True Edge to Negative Edge): Missed true edges.
@@ -85,6 +85,60 @@ These metrics are computed by the utility functions in `Validate-adj-matrix.ipyn
   * **Wilcoxon test** for pairwise comparisons.
 * Results highlight how sensitive LLMs are to phrasing, an important consideration for prompt design.
 
+--- 
+## Results:
+
+The following tables summarize how different causal verb formulations influence the accuracy of the LLM-inferred adjacency matrices across three benchmark datasets: Cancer, Asia, and Mecidal.
+
+**🔧 Structural Hamming Distance (SHD)**
+
+| Verb                  |SHD (CANCER) | SHD (ASIA) | SHD (MECIDAL) | SHD (norm) (CANCER)  | SHD (norm) (ASIA) | SHD (norm) (MECIDAL)   |
+|-----------------------|-------------|------------|---------------|----------------------|-------------------|------------------------|
+| affect                |  0          | 11         | 8             | 0.00                 | 0.1719            | 0.08                   |
+| increase the chance of|0            | 9          | 8             | 0.00                 | 0.1406            | 0.08                   |
+| influence            | 0            | 5          | 10            | 0.00                 | 0.0781            | 0.10                   |
+| lead to              | 0            | 7          | 8             | 0.00                 | 0.1094            | 0.08                   |
+| raise the risk of    | 0            | 9          | 6             | 0.00                 | 0.1406            | 0.06                   |
+| result in            | 0            | 4          | 10            | 0.00                 | 0.0625            | 0.10                   |
+| **avg**              | 0            | 4          | 6             | 0.00                 | 0.0625            | 0.06                   |
+
+**❌ True Edge to Negative Edge (TENE)**
+
+| Verb                  | TENE (CANCER)  | TENE (ASIA) | TENE (MECIDAL) | TENE (norm) (CANCER)    | TENE (norm) (ASIA)  | TENE (norm) (MECIDAL)    |
+|-----------------------|----------------|-------------|----------------|-------------------------|---------------------|--------------------------|
+| affect               |  0              | 5           | 2              | 0.0                     | 0.625               | 0.2222                   |
+| increase the chance of  0              | 4           | 3              | 0.0                     | 0.500               | 0.3333                   |
+| influence            |  0              | 1           | 4              | 0.0                     | 0.125               | 0.4444                   |
+| lead to              |  0              | 3           | 2              | 0.0                     | 0.375               | 0.2222                   |
+| raise the risk of    |  0              | 4           | 1              | 0.0                     | 0.500               | 0.1111                   |
+| result in            |  0              | 1           | 4              | 0.0                     | 0.125               | 0.4444                   |
+| **avg**              |  0              | 1           | 1              | 0.0                     | 0.125               | 0.1111                   |
+ 
+
+**✅ F1 Score**
+ | Verb                   | F1 (CANCER) | F1 (ASIA) | F1 (MECIDAL) |
+|------------------------|-------------|-----------|--------------|
+| affect                 | 1.0000      | 0.3529    | 0.6364       |
+| increase the chance of  | 1.0000      | 0.4706    | 0.6000       |
+| influence              | 1.0000      | 0.7368    | 0.5000       |
+| lead to                | 1.0000      | 0.5882    | 0.6364       |
+| raise the risk of      | 1.0000      | 0.4706    | 0.7273       |
+| result in              | 1.0000      | 0.7778    | 0.5000       |
+| **avg**                | 1.0000      | 0.7778    | 0.7273       | 
+
+
+* Robustness on Cancer dataset: All verbs result in perfect structural inference (SHD = 0, F1 = 1.0), suggesting that LLMs are highly reliable when querying simple networks with clear causal links.
+
+* The Asia dataset showed the most variation across verb types. "Result in" and "influence" performed best (SHD: 4 and 5 respectively, F1: 0.7778 and 0.7368).
+
+* Mecidal results were also verb-sensitive, with "raise the risk of" yielding the highest F1 (0.7273), while verbs like "influence" and "result in" led to lower performance.
+
+* Verbs like “result in”, “influence”, and “lead to” consistently achieved lower SHD and higher F1 scores across datasets.
+
+* High variability in TENE across verbs and datasets indicates that some formulations cause the LLM to miss true edges more frequently, particularly in Asia and Mecidal.
+
+
+**A more detailed analysis of the results can be found in the article at the link ...**
 
 ---
 
