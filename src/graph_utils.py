@@ -27,6 +27,10 @@ def mediator_removal(A): #A = adj_matrix.copy().to_numpy()
     return np.array(A_new)
 
 def remove_true_bidirectional_conflicts(df: pd.DataFrame):
+    """
+    Remove bidirectional relationships from the DataFrame where one relationship based on probability   
+    """
+
     df_filtered = df.copy()
     
     # Filter only TRUE relationships
@@ -56,6 +60,9 @@ def remove_true_bidirectional_conflicts(df: pd.DataFrame):
     return df_filtered
 
 def create_adjacency_matrix(df, node_order):
+    """
+    Creates an adjacency matrix from a DataFrame of relationships.
+    """
     adj_matrix = pd.DataFrame(0, index=node_order, columns=node_order)
     
     for _, row in df.iterrows():
